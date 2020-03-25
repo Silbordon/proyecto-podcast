@@ -8,16 +8,18 @@
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/72b8fd1e0f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <!--seccion nav-->
-  <nav class="nav">
-    <img class="logo" src="images/logo.svg" alt="logo">
-    <label for="toggle">&#9776</label>
-    <input type="checkbox" id="toggle">
+  <nav>
+    <div>
+      <img class="logo" src="images/logo.svg" alt="logo">
+    </div>
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
     <div class="menu">
       <a class="episodios" href="#episodios">EPISODIOS</a>
       <a href="#nosotros">NOSOTROS</a>
@@ -25,24 +27,31 @@
       <a href="#topicos">TÓPICOS</a>
     </div>
   </nav>
-
   <!--seccion principal-->
   <section class="principal">
-
-    <h1> Hello
+    <h1 class="h1desktop"> Hello
       <del>world</del> pale blue dot
       <span>.</span>
     </h1>
-    <p class="desktop">
-      El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves
+    <h1 class="h1movile"> Hello
+      <del>world</del>
+      <br> pale blue dot
+      <span>.</span>
+    </h1>
+    <p class="pdesktop">
+      El portal de podcasts que explora el mundo de la programación y
+      <br>
+      la tecnología. Nuevos episodios, todos los jueves
       cada 15 días.
     </p>
-    <p class="mobile">
-      Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+    <p class="pmobile">
+      Un podcast que explora el mundo de
+      <br> la programación. Nuevos episodios,
+      <br>
+      todos los jueves cada 15 días.
     </p>
     <button class="conoce">CONOCÉ MÁS</button>
   </section>
-
   <!--seccion episodios-->
   <section class="seccion-episodios" id="episodios">
     <div class="fondo"></div>
@@ -66,27 +75,56 @@
       </div>
     </div>
   </section>
-
   <!--seccion nosotros-->
   <section class="seccion-nosotros" id="nosotros">
     <img class="phone-img" src="images/phone.png" alt="primeros pasos de la mujer en la programación">
     <div class="venimos">
-      <h3>De dónde venimos</h3>
-      <br>
-      <p class="h3">Our posturings, our imagined self-importance, the delusion that we have some privileged position in
-        the
-        Universe, are challenged by this point of pale light.
+      <h3 class="nosotros-desktop">De dónde venimos</h3>
+      <h3 class="nosotros-movile">De dónde
+        <br>venimos
+      </h3>
+      <p class="nosotros-pdesktop">Our posturings, our imagined self-importance,
+        <br> the delusion that we have some privileged
+        <br>
+        position in
+        the Universe, are challenged by this
+        <br>
+        point of pale light.
         <br>
         <br>
-        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there
-        is no hint that help will come from elsewhere to save us from ourselves.
+        Our planet is a lonely speck in the great
+        <br>enveloping cosmic dark. In our obscurity, in all
+        <br>
+        this vastness, there
+        is no hint that help will
+        <br>
+        come from elsewhere to save us from ourselves.
+      </p>
+      <p class="nosotros-pmovile">
+        Our posturings, our imagined self-
+        <br>importance, the delusion that we
+        <br> have some privileged position in
+        <br>the Universe, are challenged by
+        <br>
+        this point of pale light.
+        <br>
+        <br>
+        Our planet is a lonely speck in
+        <br> the great enveloping cosmic dark.
+        <br>In our obscurity, in all this
+        <br>vastness, there is no hint that
+        <br>help will come from elsewhere to
+        <br>
+        save us from ourselves.
       </p>
     </div>
   </section>
-
   <!--seccion entrevistas-->
-  <section class="seccion-entrevistas" id="entrevistas">
-    <h4>Invitadas/os estelares</h4>
+  <section id="entrevistas">
+    <h4 class="titulo-invitadas">Invitadas/os estelares</h4>
+    <h4 class="titulo-invitadas-movile">Invitadas/os
+      <br> estelares
+    </h4>
     <div class="invitadas">
       <img src="images/grace-hopper.png" alt="Grace Hopper">
       <img src="images/Katie-Bouman.png" alt="Katie Bouman">
@@ -97,31 +135,80 @@
       <img src="images/susan-kare.png" alt="Susan Kare">
     </div>
   </section>
-
   <!--seccion topicos-->
   <section class="seccion-topicos" id="topicos">
-  <h5 class="titulo-topicos">Algunos de nuestros temas</h5>
-  <div class="topicos">
-    <div class="topico">
-      <img src="images/icon1.svg" alt="icono trabajo remoto">
-      <p>Trabajo remoto</p>
+    <h5 class="titulo-topicos">Algunos de nuestros temas</h5>
+    <h5 class="titulo-topicos-movile">Algunos de
+      <br>nuestros temas
+    </h5>
+    <div class="topicos">
+      <div class="topico">
+        <img src="images/icon1.svg" alt="icono trabajo remoto">
+        <p>Trabajo remoto</p>
+      </div>
+      <div class="topico">
+        <img src="images/icon2.svg" alt="Repensando la programación">
+        <p>Repensando la programación</p>
+      </div>
+      <div class="topico">
+        <img src="images/icon3.svg" alt="Bases del código">
+        <p>Bases del código</p>
+      </div>
+      <div class="topico">
+        <img src="images/icon4.svg" alt="Seguridad informática">
+        <p>Seguridad informática</p>
+      </div>
     </div>
-    <div class="topico">
-      <img src="images/icon2.svg" alt="Repensando la programación">
-    <p>Repensando la programación</p>
+  </section>
+  <!--seccion novedades-->
+  <section>
+    <div class="fondo-novedades">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="white" points="0,0 0,50 100,0"></polygon>
+      </svg>
     </div>
-    <div class="topico">
-      <img src="images/icon3.svg" alt="Bases del código">
-    <p>Bases del código</p>
+    <div class="seccion-novedades">
+      <h6 class="h6-novedades">¿Querés las últimas novedades?</h6>
+      <h6 class="h6-novedades-movile">¿Querés las
+        <br> últimas
+        <br> novedades?
+      </h6>
+      <div>
+        <button class="escucha">ESCUCHÁ LOS EPISODIOS</button>
+      </div>
     </div>
-    <div class="topico">
-      <img src="images/icon4.svg" alt="Seguridad informática">
-    <p>Seguridad informática</p>
+  </section>
+  <!--seccion footer-->
+  <footer class="footer">
+    <p class="texto-footer">© 2019— Hello blue pale dot</p>
+    <div class="item-footer">
+      <div>
+        <a href="https://www.spotify.com/ar/" target="_blank">
+          <i class="fab fa-spotify"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/?lang=es" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <div class="items-footer">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://telegram.org/" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
     </div>
-
-  </div>
-</section>
-
+  </footer>
 </body>
 
 </html>
