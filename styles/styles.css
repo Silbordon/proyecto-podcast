@@ -64,6 +64,7 @@ nav {
 .menu .episodios:active {
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
+  color: rgb(6, 10 , 36);
   color: rgba(6, 10, 36, 0.56);
   text-decoration: line-through;
 }
@@ -121,7 +122,6 @@ button a {
   letter-spacing: 0;
   text-align: center;
   line-height: 24px;
-  border: #00f3bb 100% solid;
   width: 226px;
   height: 56px;
   background-color: #00f3bb;
@@ -168,6 +168,9 @@ button a {
   z-index: 5;
 }
 
+iframe{
+  width: 90%;
+}
 .iframe {
   display: flex;
   justify-content: center;
@@ -193,7 +196,6 @@ button a {
 }
 
 .venimos {
-  text-align: right;
   margin: 250px 100px 20px 50px;
   text-align: left;
 }
@@ -280,7 +282,7 @@ img {
   flex-direction: column;
   align-items: center;
   width: 180px;
-  padding: 60px 40px;
+  margin: 60px 40px;
 }
 
 .topico img {
@@ -597,8 +599,7 @@ i {
     font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     line-height: 22px;
-    margin: 10px 0 50px 0;
-    padding-left: 20px;
+    margin: 10px 0 50px 20px;
     width: 100%;
     word-spacing: 8px;
     color: #060a24;
@@ -623,7 +624,6 @@ i {
     line-height: 42px;
     display: flex;
     padding: 0 0 0 20px;
-    justify-content: start;
   }
   .invitadas {
     margin-top: 20px;
@@ -649,16 +649,16 @@ i {
     color: #060a24;
     letter-spacing: 0;
     line-height: 42px;
-    padding-left: 10px;
+    padding-left: 20px;
     display: flex;
-    justify-content: start;
+    
   }
 
   .topicos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .topico {
@@ -666,7 +666,7 @@ i {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    padding: 30px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   .topico img {
@@ -680,7 +680,7 @@ i {
     color: #060a24;
     letter-spacing: 0;
     text-align: center;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 20px 0;
   }
   .titulo-topicos {
     display: none;
@@ -691,7 +691,7 @@ i {
 
 .fondo-novedades {
  
-  height: 55%;
+  height: 58%;
   
 }
 
@@ -701,7 +701,6 @@ i {
   display: flex;
   align-items: center;
   flex-direction: column;
-  align-items: center;
   z-index: 11;
   padding-top: 70px;
   padding-bottom: 100px;
@@ -715,7 +714,6 @@ i {
   font-weight: lighter;
 line-height: 42px;
 display: block;
-font-weight: lighter;
 }
 .escucha {
   font-family: "IBM Plex Mono", monospace;
